@@ -1,0 +1,492 @@
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+  }
+
+  a{
+      text-decoration: none;
+  }
+
+/*Header section css start*/  
+
+.header_section{
+    padding: 7px;
+    margin: 15px 80px;
+}
+.zomato_logo{
+    display: flex;
+    margin-left:-4%;
+}
+.zomato_logo img{
+    width: 100%;
+    margin-top: 12px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    width:56%;
+    height: 8vh;
+    border: 1px solid rgb(190, 186, 186);
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 5px 0;
+    margin-left: 5%;
+    margin-top: 3px;;
+}
+.search select{
+    color: grey;
+    background-color: #fff;
+    border:0px;
+    outline: 0px;
+    border-right: 1px solid grey;
+    font-family: Okra,Helvetica,sans-serif;
+    font-size: 15px;
+}
+.search i{
+    color:gray;
+    padding-left: 10px;
+}
+.search i:first-child{
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color:rgb(252,119,119);
+    position: relative;
+    left:0;
+}
+.search input{
+    outline: none;
+    border: none;
+    width:50%;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.listing_nav{
+    display: flex;
+    margin-top: 12px;
+}
+  .listing_nav li{
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    cursor: pointer;
+    list-style:none;
+    padding-left: 40px;
+}
+.listing_nav li a{
+      color:gray
+  }
+.listing_nav li a:hover{
+    color:rgb(78,78,78);
+}
+/*Header section css end*/  
+
+
+/*filter and content section css start*/  
+.container-fluid{
+    background-color: rgb(248,248,248);
+    padding-top: 10px;
+}
+
+/*filter section css start*/  
+.filter{
+    border:2px solid #fff;
+    background-color: #fff;
+    border-radius: 3px;
+    height: 145vh;
+    width:19%;
+    margin:0 15px;
+    padding: 15px;
+    color:rgb(90, 87, 87);
+    box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
+}
+.filter_margin{
+    margin:15px 0;
+}
+.filters{
+    margin:8px 10px;
+}
+.title{
+    font-size:20px;
+    color:rgb(48, 43, 43)
+}
+.search_title{
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+.search_title div{
+    border: 1px solid rgb(130,130,130);
+    padding: 3px;
+    height: 5vh;
+    margin-top: 12px;
+    border-radius: 3px;
+}
+.search_title div i{
+    float: right;
+    font-size: 13px;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+.filter_checkbox{
+    margin:15px 0;
+}
+.filter_radio{
+    margin:15px 0;
+}
+.filter_sort{
+    margin:15px 0;
+}
+.filter_cuisine, .filter_price, .filter_sort, .filter_rating, .filter_offer, .filter_discount, input{
+    accent-color: rgb(231, 79, 95) ;
+}
+/*filter section css end*/  
+
+
+/*content section css start*/  
+.content{
+    border:2px solid #fff;
+    background-color: #fff;
+    border-radius: 3px;
+    margin-left: 5px;
+    margin-bottom: 40px;
+    height: auto;
+    width:76.4%;
+    padding: 15px 20px;
+    box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
+}
+.content_block{
+    margin-bottom: 30px;
+}
+.content_block h2{
+    font-weight: 400;
+    margin-left:2%;
+    color:rgb(90, 87, 87);
+}
+
+
+/*content carousel css start*/  
+.carousel_height{
+    height:43vh;
+}
+.carousel-control-prev {
+    margin-top:-10px;
+    margin-left: -45px;
+}
+.carousel-control-next {
+      margin-top:-10px;
+      margin-right: -45px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+      width:25px;
+      height:25px;
+      border:2px solid rgb(212, 79, 79);
+      background-color: rgb(231, 79, 95) ;
+      border-radius: 50%;
+}
+.carousel_position{
+    margin-top:-58px;
+}
+/*content carousel css end*/ 
+
+
+/*content section  order css start*/ 
+.order_category img{
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    margin:7px 20px;
+}
+.order_category div{
+    text-align: center;
+}
+/*content section order css end*/ 
+
+/*content section brand css start*/ 
+.brand_category img{
+    height: 80%;
+    width: 80%;
+    margin:7px 20px;
+    overflow: hidden;
+    padding: 2px;
+}
+.brand_border img{
+    border-radius: 50%;
+}
+.brand_category div{
+    text-align: center;
+}
+/*content section brand css end*/ 
+
+/*content section cards css start*/ 
+.order_card h2{
+    font-weight: 400;
+    margin-bottom: 20px;
+    color:rgb(90, 87, 87);
+}
+.order_cardimg{
+    position: relative;
+}
+.order_cardimg img{
+    height:36vh;
+    width:100%;
+    border-radius: 15px;
+}
+.order_cardimg .order_min{
+    position: absolute;
+    bottom: 4%;
+    right: 5%;
+    width: 16%;
+    height: 3vh;
+    color: rgb(44, 42, 42);
+    background: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.order_min p{
+    text-align: center;
+}
+.ordercard_text{
+    margin-top:8px;
+}
+.order_cardmargin{
+    margin-bottom: 50px;
+}
+.order_name{
+    font-size:1.2em;
+    font-weight: 500;
+    color:rgb(34, 32, 32);
+}
+.order_rating{
+    margin-top: 5px;
+    font-size: 13px;
+    height:3vh;
+    background-color: rgb(52, 160, 52);
+    color: #fff;
+    width: 16%;
+    margin-left: 14px;
+    border-radius: 4px;
+}
+.order_rating i{
+    font-size: 7px;
+    position: relative;
+    top: -2px;
+    left: 3px;
+}
+.order_type{
+    font-size: 15px;
+    font-weight: 300;
+    color:rgb(90, 88, 88);
+}
+.order_price{
+    position: relative;
+    left: 18px;
+    font-size: 15px;
+    font-weight: 300;
+    color:rgb(90, 88, 88);
+}
+.order_summary img{
+    height:20px;
+    height:20px;
+}
+.order_summary span{
+    font-size: 12px;
+    font-weight: 300;
+    color:rgb(90, 88, 88);
+}
+.order_safety img{
+    margin-left: -20px;
+    height: 3vh;
+    width: 170%;
+}
+/*content section cards css end*/ 
+
+
+/*Explore section css start*/
+.explore_detail{
+    margin:40px 85px;
+}
+.other_options{
+    margin-bottom: 60px;
+}
+.other_options h1{
+    font-size: 2.1rem;
+    font-family:  Okra,Helvetica,sans-serif;
+    color:rgb(54, 54, 54);
+    font-weight: 500;
+}
+.other_options h3{
+    margin-top:25px;
+    margin-bottom: 18px;
+    font-size: 1.6rem;
+    font-family:  Okra,Helvetica,sans-serif;
+    color:rgb(54, 54, 54);
+    font-weight: 500;
+}
+.explore_details a{
+   text-decoration: none;
+   color:rgb(130,130,130);
+   font-size: 1.1em;
+   font-family:  Okra,Helvetica,sans-serif; 
+}
+.explore_details a:hover{
+    color:rgb(28, 28, 28);
+}
+.explore_details i{
+    color: rgb(130,130,130);
+    font-size: 0.3rem;
+    padding: 12px 7px;
+    position: relative;
+    top: -5px;
+    left:2px;
+}
+/*Explore section css end*/
+
+
+/*Restaurant section css start*/
+.restaurant_details a{
+   text-decoration: none;
+   color:rgb(130,130,130);
+   font-size: 1.1em;
+   font-family:  Okra,Helvetica,sans-serif; 
+}
+.restaurant_details a:hover{
+    color:rgb(28, 28, 28);
+}
+.restaurant_details i{
+    color: rgb(130,130,130);
+    font-size: 0.3rem;
+    padding: 12px 6px;
+    position: relative;
+    top: -5px;
+    left:2px; 
+}
+/*Restaurant section css end*/
+
+
+
+/*cities section css start*/
+.city{
+    margin-left:-35px;
+}
+.city ul li{
+    list-style: none;
+    padding: 9px 6px;
+}
+.city ul li a{
+    text-decoration: none;
+    color:rgb(130,130,130);
+    font-size: 1.1em;
+    font-family:  Okra,Helvetica,sans-serif; 
+}
+.city ul li a:hover{
+   color:rgb(28, 28, 28);
+}
+.city1{
+    margin-left:35px;
+}
+.city1 ul li{
+    list-style: none;
+    padding: 9px 6px;
+}
+.city1 ul li a{
+    text-decoration: none;
+    color:rgb(130,130,130);
+    font-size: 1.1em;
+    font-family:  Okra,Helvetica,sans-serif; 
+}
+.city1 ul li a:hover{
+   color:rgb(28, 28, 28);
+}
+.city1 ul li a.see_more{
+    color: rgb(28, 28, 28);
+}
+.line{
+    color: rgb(8, 8, 8);
+    border: 1px solid;
+    margin-left: -15px;
+    margin-top: 6px;
+    width: 90%;
+}  
+/*cities section css end*/ 
+
+
+/*Footer css start*/
+.footer{
+    background-color: rgb(244, 244, 253);
+    width:100%;
+}
+.footer_section{
+    width:100%;
+    padding-top:60px;
+    padding-left:80px;
+    padding-right:100px;
+}
+.footer_section .footer_img img{
+    height:6vh;
+    margin-left: 5px;
+}
+.footer_section .footer_option{
+    margin-top:9px;
+}
+.footer_section .footer_option span{
+    margin: 6px;
+   padding:10px;
+   border:1px solid rgb(155, 152, 152);
+   border-radius: 5px;
+}
+.footer_nav{
+    width:94%;
+    margin:40px 72px;
+}
+.enterprise{
+    margin-top:25px;
+}
+.footer_nav_style h4{
+    color: rgb(22, 22, 22);
+    font-weight: 400;
+    margin-bottom: 9px;
+    font-size: 18px;
+}
+.footer_nav_style ul{
+    margin-left: -34px;
+}
+.footer_nav_style ul li{
+    list-style: none;
+    padding: 2px 3px;
+}
+.footer_nav_style ul li a{
+    text-decoration: none;
+    color:rgb(130,130,130);
+    font-size: 1em;
+    font-family:  Okra,Helvetica,sans-serif; 
+}
+.footer_nav_style ul li a:hover{
+   color:rgb(28, 28, 28);
+}
+.social_links i{
+    height:15px;
+    width:15px;
+    margin:3px 4px;
+    border-radius: 50%;
+    margin-bottom: 18px;
+}
+.social_links img{
+    height: 6vh;
+    width: 50%;
+    margin: 6px 0px;
+}
+.footer_hr{
+    margin-left:80px;
+    width:85%;
+    margin-bottom: 20px;
+}
+.footer_text{
+    margin-left: 67px;
+    width:87%;
+    font-size: 14.1px;
+    color:rgb(121, 107, 107);
+    padding-bottom: 15px;
+}
+/*Footer css end*/

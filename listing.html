@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="listing.css">
+        <link rel="icon" href="images/icon.png">
+        <title>Order food online in Ahmedabad</title>
+    </head>
+    <body>
+        <!--navbar section start-->
+        <section>
+            <div class="row header_section">
+                <div class="col-md-2 zomato_logo">
+                   <a href="index.html"> <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*" alt="zomato"></a>
+                </div>
+                <div class="col-md-7 search">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <select name="Ahmedabad" id="city">
+                       <option value="ahmedabad">Ahmedabad</option>
+                       <option value="mumbai">Mumbai</option>
+                       <option value="delhi">Delhi</option>
+                       <option value="chennai">Chennai</option>
+                       
+                     </select>
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for restaurant, cuisine or a dish">
+                </div>
+                <div class="col-md-3">
+                <ul class="listing_nav">
+                    <li><a href="#">Log in</a></li>
+                    <li><a href="#">Sign up</a></li>
+                </ul>
+            </div>
+            </div>
+        </section>
+        <!--navbar section end-->
+
+        <!--filter and content section start-->
+        <section class="container-fluid">
+            <div class="row">
+                <!--filter section start-->
+                <div class="col-lg-3 filter">
+                    <div class="filters">
+                        <div class="title">
+                            <span>Filters</span>
+                        </div>
+                        <div class="search_title">
+                            <span>Select location</span>
+                            <div>
+                            <span>Select location
+                            <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="filter_cuisine filter_margin">
+                            <span>Cuisine</span>
+                             <div>
+                                 <input type="checkbox" name="cuisine">
+                                 <label>North Indian</label>
+                             </div>
+                             <div>
+                                <input type="checkbox" name="cuisine">
+                                <label>South Indian</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="cuisine">
+                                <label>Chinese</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="cuisine">
+                                <label>Fast Food</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="cuisine">
+                                <label>Street Food</label>
+                            </div>
+                        </div>
+                        <div class="filter_price filter_margin">
+                            <span>Cost For Two</span>
+                             <div>
+                                 <input type="radio" name="price">
+                                 <label>Less than <i class="fa-solid fa-indian-rupee-sign"></i> 500</label>
+                             </div>
+                             <div>
+                                <input type="radio" name="price">
+                                <label><i class="fa-solid fa-indian-rupee-sign"></i> 500 to <i class="fa-solid fa-indian-rupee-sign"></i> 1000</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="price">
+                                <label><i class="fa-solid fa-indian-rupee-sign"></i> 1000 to <i class="fa-solid fa-indian-rupee-sign"></i> 1500</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="price">
+                                <label><i class="fa-solid fa-indian-rupee-sign"></i> 1500 to <i class="fa-solid fa-indian-rupee-sign"></i> 2000</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="price">
+                                <label>More than <i class="fa-solid fa-indian-rupee-sign"></i> 2000</label>
+                            </div>
+                        </div>
+                        <div class="filter_sort filter_margin">
+                            <span>Sort</span>
+                             <div>
+                                 <input type="radio" name="sort">
+                                 <label>Price low to high</label>
+                             </div>
+                             <div>
+                                <input type="radio" name="sort">
+                                <label>Price high to low</label>
+                            </div>
+                        </div> 
+                        <div class="filter_rating filter_margin">
+                            <span>Customer Ratings</span>
+                             <div>
+                                 <input type="checkbox" name="rating">
+                                 <label>4<i class="fa-solid fa-star"></i> & Above</label>
+                             </div>
+                             <div>
+                                <input type="checkbox" name="rating">
+                                <label>3<i class="fa-solid fa-star"></i> & Above</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="rating">
+                                <label>2<i class="fa-solid fa-star"></i> & Above</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="rating">
+                                <label>1<i class="fa-solid fa-star"></i> & Above</label>
+                            </div>   
+                        </div>
+                        <div class="filter_offer filter_margin">
+                            <span>Offers</span>
+                             <div>
+                                 <input type="checkbox" name="offer">
+                                 <label>Buy More,Save More</label>
+                             </div>
+                             <div>
+                                <input type="checkbox" name="offer">
+                                <label>Special Price</label>
+                            </div>
+                        </div>
+                        <div class="filter_discount filter_margin">
+                            <span>cuisine</span>
+                             <div>
+                                 <input type="checkbox" name="discount">
+                                 <label>70% or more</label>
+                             </div>
+                             <div>
+                                <input type="checkbox" name="discount">
+                                <label>60% or more</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="discount">
+                                <label>50% or more</label>
+                            </div>
+                            <div>
+                               <input type="checkbox" name="discount">
+                               <label>40% or more</label>
+                           </div>
+                           <div>
+                            <input type="checkbox" name="discount">
+                            <label>30% or more</label>
+                           </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!--filter section end-->
+
+                <!--content section start-->
+                <div class="col-lg-9 content">
+                    <div class="content_block">
+                    <!--order carousel section start-->
+                    <h2>Inspiration for your first order</h2>
+                     <div id="food_carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!--order carousel 1st section start-->
+                          <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-3 order_category">
+                                  <img src="https://b.zmtcdn.com/data/dish_images/da37534e55d5f1450ea9771c0627a8d81641644205.png" alt="Home Style">
+                                  <div>Home Style</div>
+                                </div>
+                                <div class="col-lg-3 order_category">
+                                 <img src="https://b.zmtcdn.com/data/o2_assets/52eb9796bb9bcf0eba64c643349e97211634401116.png" alt="Thali">
+                                 <div>Thali</div>
+                                </div>
+                                <div class="col-lg-3 order_category">
+                                 <img src="https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png" alt="Pizza">
+                                 <div>Pizza</div>
+                                </div>
+                                <div class="col-lg-3 order_category">
+                                  <img src="https://b.zmtcdn.com/data/o2_assets/fc641efbb73b10484257f295ef0b9b981634401116.png" alt="Sandwich">
+                                  <div>Sandwich</div>
+                                </div>
+                            </div>
+                          </div>
+                          <!--order carousel 2nd section start-->
+                          <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3 order_category">
+                                  <img src="https://b.zmtcdn.com/data/dish_images/1437bc204cb5c892cb22d78b4347f4651634827140.png" alt="Chaat">
+                                  <div>Chaat</div>
+                                </div>
+                                <div class="col-lg-3 order_category">
+                                 <img src="https://b.zmtcdn.com/data/o2_assets/2b5a5b533473aada22015966f668e30e1633434990.png" alt="Paratha">
+                                 <div>Paratha</div>
+                                </div>
+                                <div class="col-lg-3 order_category">
+                                 <img src="https://b.zmtcdn.com/data/dish_images/ccb7dc2ba2b054419f805da7f05704471634886169.png" alt="Burger">
+                                 <div>Burger</div>
+                                </div>
+                                <div class="col-lg-3 order_category">
+                                  <img src="https://b.zmtcdn.com/data/dish_images/d19a31d42d5913ff129cafd7cec772f81639737697.png" alt="Biryani">
+                                  <div>Biryani</div>
+                                </div>
+                            </div>
+                          </div>
+                             <!--order carousel 3rd section start-->
+                          <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3 order_category">
+                                  <img src="https://b.zmtcdn.com/data/dish_images/838c7929dcc09479600f118c9088af7b1614910398.png" alt="Bowl">
+                                  <div>Bowl</div>
+                                </div>
+                                <div class="col-lg-3 order_category">
+                                 <img src="https://b.zmtcdn.com/data/o2_assets/048d124a83e74e13e059a17a8ffc7dcf1632716697.png" alt="Chaach">
+                                 <div>Chaach</div>
+                                </div>
+                                <div class="col-lg-3 order_category">
+                                 <img src="https://b.zmtcdn.com/data/o2_assets/13bdf0d4c96d44e6ddb21fedde0fe4081632716661.png" alt="Fries">
+                                 <div>Fries</div>
+                                </div>
+                                <div class="col-lg-3 order_category">
+                                  <img src="https://b.zmtcdn.com/data/dish_images/8187d3223ac2cc42cc24f723c92877511634805403.png" alt="Shake">
+                                  <div>Shake</div>
+                                </div>
+                             </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#food_carousel" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next " type="button" data-bs-target="#food_carousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                    <!--order carousel section end-->
+
+                    <!--brand carousel section start-->
+                    <div class="content_block">
+                        <h2>Top brands for you</h2>
+                         <div id="brands_carousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner carousel_height">
+                                <!--brand carousel 1st section start-->
+                              <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-3 brand_category">
+                                      <img src="https://b.zmtcdn.com/data/brand_creatives/logos/0e6f4a6a6d54c88d548abaa04a0227bc_1625165036.png" alt="McDonald's">
+                                      <div>McDonald's</div>
+                                      <div>24 min</div>
+                                    </div>
+                                    <div class="col-lg-3 brand_category">
+                                     <img src="https://b.zmtcdn.com/data/brand_creatives/logos/5caf38856d23347b351bb7abf97134d3_1583218253.png" alt="Domino's Pizza">
+                                     <div>Domino's Pizza</div>
+                                     <div>30 min</div>
+                                    </div>
+                                    <div class="col-lg-3 brand_category">
+                                     <img src="https://b.zmtcdn.com/data/brand_creatives/logos/03599494c6aa23782f85b9dc127548d8_1605092896.png" alt="Gwalia Sweets & Fast Food">
+                                     <div>Gwalia Sweets & Fast Food</div>
+                                     <div>20 min</div>
+                                    </div>
+                                    <div class="col-lg-3 brand_category">
+                                      <img src="https://b.zmtcdn.com/data/brand_creatives/logos/c4e5d79a73034d7615dd1f973f05a02a_1642259612.png" alt="Subway">
+                                      <div>Subway</div>
+                                      <div>24 min</div>
+                                    </div>
+                                </div>
+                              </div>
+                              <!--brand carousel 2nd section start-->
+                              <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-3 brand_category">
+                                      <img src="https://b.zmtcdn.com/data/brand_creatives/logos/6a11fd0f30c9fd9ceaff2f5b21f61d23_1617187636.png" alt="Burger King">
+                                      <div>Burger King</div>
+                                      <div>28 min</div>
+                                    </div>
+                                    <div class="col-lg-3 brand_category brand_border">
+                                     <img src="https://b.zmtcdn.com/data/brand_creatives/logos/425578e88089c4e2454dd2cba8e6397e_1619766113.png" alt="Chhaswala">
+                                     <div>Chhaswala</div>
+                                     <div>15 min</div>
+                                    </div>
+                                    <div class="col-lg-3 brand_category brand_border">
+                                     <img src="https://b.zmtcdn.com/data/brand_creatives/logos/1f5520773f9d430b15f535d1098d013a_1611305222.png" alt="Food On Way">
+                                     <div>Food On Way</div>
+                                     <div>34 min</div>
+                                    </div>
+                                    <div class="col-lg-3 brand_category">
+                                      <img src="https://b.zmtcdn.com/data/brand_creatives/logos/246cce69e468341e27e835f5bb3a535b_1568093471.png" alt="Jay Bhavani Vadapav">
+                                      <div>Jay Bhavani Vadapav</div>
+                                      <div>25 min</div>
+                                    </div>
+                                </div>
+                              </div>
+                             
+                            </div>
+                            <button class="carousel-control-prev carousel_position" type="button" data-bs-target="#brands_carousel" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next carousel_position" type="button" data-bs-target="#brands_carousel" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        </div>
+                      <!--brand carousel section end-->
+
+                     <!--order card section start-->
+                     <div class="order_card">
+                         <h2>Order food online in Ahmedabad</h2>
+                          <!--order card 1st raw start-->
+                         <div class="row order_cardmargin">
+                             <div class="col-lg-4">
+                                 <div class="order_cardimg">
+                                     <img src="https://b.zmtcdn.com/data/pictures/3/19515573/0e244f13ff5a66ed579d634e15a1e9ca_o2_featured_v2.jpg" alt="Tandoor Story">
+                                     <div class="order_min"><p>31 min</p></div>
+                                </div>
+                                <div class="row ordercard_text">
+                                    <div class="col-md-9 order_name">
+                                        Tandoor Story
+                                    </div>
+                                    <div class="col-md-3 order_rating">
+                                        4.0<i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="row ordercard_text">
+                                    <div class="col-md-7 order_type">
+                                        North Indian,Biryani
+                                    </div>
+                                    <div class="col-md-5 order_price">
+                                        <i class="fa-solid fa-indian-rupee-sign"></i> 250 for one
+                                    </div>
+                                </div>
+                             
+                                <hr />
+                                <div class="row ordercard_text">
+                                    <div class="col-md-10 order_summary">
+                                        <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png" alt="trending">
+                                        <span>2200+ orders placed from here recently</span>
+                                    </div>
+                                    <div class="col-md-2 order_safety">
+                                        <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png" alt="max safety">
+                                    </div>
+                                </div>
+                             </div>
+
+                             <div class="col-lg-4">
+                                <div class="order_cardimg">
+                                    <img src="https://b.zmtcdn.com/data/pictures/chains/9/18438909/8ac67f799c14cd3b586e18e48eaa00f7_o2_featured_v2.jpg" alt="Domino's Pizza">
+                                    <div class="order_min"><p>28 min</p></div>
+                               </div>
+                               <div class="row ordercard_text">
+                                   <div class="col-md-9 order_name">
+                                    Domino's Pizza
+                                   </div>
+                                   <div class="col-md-3 order_rating">
+                                       3.9<i class="fa-solid fa-star"></i>
+                                   </div>
+                               </div>
+                               <div class="row ordercard_text">
+                                   <div class="col-md-7 order_type">
+                                       Pizza,Fast Food
+                                   </div>
+                                   <div class="col-md-5 order_price">
+                                       <i class="fa-solid fa-indian-rupee-sign"></i> 250 for one
+                                   </div>
+                               </div>
+                            
+                               <hr />
+                               <div class="row ordercard_text">
+                                   <div class="col-md-10 order_summary">
+                                       <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png" alt="trending">
+                                       <span>3675+ orders placed from here recently</span>
+                                   </div>
+                                   <div class="col-md-2 order_safety">
+                                       <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png" alt="max safety">
+                                   </div>
+                               </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="order_cardimg">
+                                    <img src="https://b.zmtcdn.com/data/pictures/5/18808035/60a335e166fe3bef5adfcf464532ddea_o2_featured_v2.jpg" alt="Food Way">
+                                    <div class="order_min"><p>31 min</p></div>
+                               </div>
+                               <div class="row ordercard_text">
+                                   <div class="col-md-9 order_name">
+                                    Food On Way
+                                   </div>
+                                   <div class="col-md-3 order_rating">
+                                       3.7<i class="fa-solid fa-star"></i>
+                                   </div>
+                               </div>
+                               <div class="row ordercard_text">
+                                   <div class="col-md-7 order_type">
+                                       North Indian,Chinese
+                                   </div>
+                                   <div class="col-md-5 order_price">
+                                       <i class="fa-solid fa-indian-rupee-sign"></i> 250 for one
+                                   </div>
+                               </div>
+                            
+                               <hr />
+                               <div class="row ordercard_text">
+                                   <div class="col-md-10 order_summary">
+                                       <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png" alt="trending">
+                                       <span>3975+ orders placed from here recently</span>
+                                   </div>
+                                   <div class="col-md-2 order_safety">
+                                       <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png" alt="max safety">
+                                   </div>
+                               </div>
+                            </div>
+                         </div>
+                          <!--order card 2nd raw start-->
+                         <div class="row order_cardmargin">
+                            <div class="col-lg-4">
+                                <div class="order_cardimg">
+                                    <img src="https://b.zmtcdn.com/data/pictures/4/110224/6c904a8774ca96d850d0d5dbb9ea48c9_o2_featured_v2.jpg" alt="Shivam Bhojnalaya">
+                                    <div class="order_min"><p>33 min</p></div>
+                               </div>
+                               <div class="row ordercard_text">
+                                   <div class="col-md-9 order_name">
+                                    Shivam Bhojnalaya
+                                   </div>
+                                   <div class="col-md-3 order_rating">
+                                       3.6<i class="fa-solid fa-star"></i>
+                                   </div>
+                               </div>
+                               <div class="row ordercard_text">
+                                   <div class="col-md-7 order_type">
+                                       North Indian,Gujarati
+                                   </div>
+                                   <div class="col-md-5 order_price">
+                                       <i class="fa-solid fa-indian-rupee-sign"></i> 200 for one
+                                   </div>
+                               </div>
+                            
+                               <hr />
+                               <div class="row ordercard_text">
+                                   <div class="col-md-10 order_summary">
+                                       <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png" alt="trending">
+                                       <span>1030+ orders placed from here recently</span>
+                                   </div>
+                                   <div class="col-md-2 order_safety">
+                                       <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png" alt="max safety">
+                                   </div>
+                               </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                               <div class="order_cardimg">
+                                   <img src="https://b.zmtcdn.com/data/pictures/chains/1/110381/9c9c5614ae656da63c55327768e32850_o2_featured_v2.jpg" alt="Subway">
+                                   <div class="order_min"><p>25 min</p></div>
+                              </div>
+                              <div class="row ordercard_text">
+                                  <div class="col-md-9 order_name">
+                                    Subway
+                                  </div>
+                                  <div class="col-md-3 order_rating">
+                                      3.7<i class="fa-solid fa-star"></i>
+                                  </div>
+                              </div>
+                              <div class="row ordercard_text">
+                                  <div class="col-md-7 order_type">
+                                      Healthy Food,Fast Food
+                                  </div>
+                                  <div class="col-md-5 order_price">
+                                      <i class="fa-solid fa-indian-rupee-sign"></i> 200 for one
+                                  </div>
+                              </div>
+                           
+                              <hr />
+                              <div class="row ordercard_text">
+                                  <div class="col-md-10 order_summary">
+                                      <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png" alt="trending">
+                                      <span>2500+ orders placed from here recently</span>
+                                  </div>
+                                  <div class="col-md-2 order_safety">
+                                      <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png" alt="max safety">
+                                  </div>
+                              </div>
+                           </div>
+
+                           <div class="col-lg-4">
+                               <div class="order_cardimg">
+                                   <img src="https://b.zmtcdn.com/data/pictures/chains/5/112945/66eed7b6e96c28483a11e3dc535b6016_o2_featured_v2.jpg" alt="KFC">
+                                   <div class="order_min"><p>34 min</p></div>
+                              </div>
+                              <div class="row ordercard_text">
+                                  <div class="col-md-9 order_name">
+                                    KFC
+                                  </div>
+                                  <div class="col-md-3 order_rating">
+                                      4.0<i class="fa-solid fa-star"></i>
+                                  </div>
+                              </div>
+                              <div class="row ordercard_text">
+                                  <div class="col-md-7 order_type">
+                                      Fast Food,Burger
+                                  </div>
+                                  <div class="col-md-5 order_price">
+                                      <i class="fa-solid fa-indian-rupee-sign"></i> 250 for one
+                                  </div>
+                              </div>
+                           
+                              <hr />
+                              <div class="row ordercard_text">
+                                  <div class="col-md-10 order_summary">
+                                      <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png" alt="trending">
+                                      <span>7050+ orders placed from here recently</span>
+                                  </div>
+                                  <div class="col-md-2 order_safety">
+                                      <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png" alt="max safety">
+                                  </div>
+                              </div>
+                           </div>
+                        </div>
+                          <!--order card 3rd raw start-->
+                         <div class="row order_cardmargin">
+                            <div class="col-lg-4">
+                                <div class="order_cardimg">
+                                    <img src="https://b.zmtcdn.com/data/pictures/chains/2/18549832/9f2f843523d0e8b9ecd9ee9ee32c1c46_o2_featured_v2.jpg" alt="Burger King">
+                                    <div class="order_min"><p>31 min</p></div>
+                               </div>
+                               <div class="row ordercard_text">
+                                   <div class="col-md-9 order_name">
+                                    Burger King
+                                   </div>
+                                   <div class="col-md-3 order_rating">
+                                       3.9<i class="fa-solid fa-star"></i>
+                                   </div>
+                               </div>
+                               <div class="row ordercard_text">
+                                   <div class="col-md-7 order_type">
+                                       Burger,Fast Food
+                                   </div>
+                                   <div class="col-md-5 order_price">
+                                       <i class="fa-solid fa-indian-rupee-sign"></i> 250 for one
+                                   </div>
+                               </div>
+                            
+                               <hr />
+                               <div class="row ordercard_text">
+                                   <div class="col-md-10 order_summary">
+                                       <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png" alt="trending">
+                                       <span>575+ orders placed from here recently</span>
+                                   </div>
+                                   <div class="col-md-2 order_safety">
+                                       <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png" alt="max safety">
+                                   </div>
+                               </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                               <div class="order_cardimg">
+                                   <img src="https://b.zmtcdn.com/data/pictures/5/111085/73d1c1f933e2ae803faf02634db20d9e_o2_featured_v2.jpg" alt="May Flower">
+                                   <div class="order_min"><p>28 min</p></div>
+                              </div>
+                              <div class="row ordercard_text">
+                                  <div class="col-md-9 order_name">
+                                   May Flower
+                                  </div>
+                                  <div class="col-md-3 order_rating">
+                                      4.2<i class="fa-solid fa-star"></i>
+                                  </div>
+                              </div>
+                              <div class="row ordercard_text">
+                                  <div class="col-md-7 order_type">
+                                      North Indian, Chinese
+                                  </div>
+                                  <div class="col-md-5 order_price">
+                                      <i class="fa-solid fa-indian-rupee-sign"></i> 250 for one
+                                  </div>
+                              </div>
+                           
+                              <hr />
+                              <div class="row ordercard_text">
+                                  <div class="col-md-10 order_summary">
+                                      <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png" alt="trending">
+                                      <span>3025+ orders placed from here recently</span>
+                                  </div>
+                                  <div class="col-md-2 order_safety">
+                                      <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png" alt="max safety">
+                                  </div>
+                              </div>
+                           </div>
+
+                           <div class="col-lg-4">
+                               <div class="order_cardimg">
+                                   <img src="https://b.zmtcdn.com/data/pictures/chains/5/110155/53f46f3c1ba67002bfc583883bc73dba_o2_featured_v2.jpg" alt="Hocco Eatery">
+                                   <div class="order_min"><p>27 min</p></div>
+                              </div>
+                              <div class="row ordercard_text">
+                                  <div class="col-md-9 order_name">
+                                    Hocco Eatery
+                                  </div>
+                                  <div class="col-md-3 order_rating">
+                                      4.2<i class="fa-solid fa-star"></i>
+                                  </div>
+                              </div>
+                              <div class="row ordercard_text">
+                                  <div class="col-md-7 order_type">
+                                      North Indian,Fast Food
+                                  </div>
+                                  <div class="col-md-5 order_price">
+                                      <i class="fa-solid fa-indian-rupee-sign"></i> 200 for one
+                                  </div>
+                              </div>
+                           
+                              <hr />
+                              <div class="row ordercard_text">
+                                  <div class="col-md-10 order_summary">
+                                      <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png" alt="trending">
+                                      <span>575+ orders placed from here recently</span>
+                                  </div>
+                                  <div class="col-md-2 order_safety">
+                                      <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png" alt="max safety">
+                                  </div>
+                              </div>
+                           </div>
+                        </div>
+                         <!--order card 4th raw start-->
+                         <div class="row order_cardmargin">
+                            <div class="col-lg-4">
+                                <div class="order_cardimg">
+                                    <img src="https://b.zmtcdn.com/data/pictures/chains/5/110225/3978e28854b7496dbef9496546734811_o2_featured_v2.jpg" alt="Jassi De Parathe">
+                                    <div class="order_min"><p>32 min</p></div>
+                               </div>
+                               <div class="row ordercard_text">
+                                   <div class="col-md-9 order_name">
+                                    Jassi De Parathe
+                                   </div>
+                                   <div class="col-md-3 order_rating">
+                                       4.2<i class="fa-solid fa-star"></i>
+                                   </div>
+                               </div>
+                               <div class="row ordercard_text">
+                                   <div class="col-md-7 order_type">
+                                       North Indian
+                                   </div>
+                                   <div class="col-md-5 order_price">
+                                       <i class="fa-solid fa-indian-rupee-sign"></i> 150 for one
+                                   </div>
+                               </div>
+                            
+                               <hr />
+                               <div class="row ordercard_text">
+                                   <div class="col-md-10 order_summary">
+                                       <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png" alt="trending">
+                                       <span>1425+ orders placed from here recently</span>
+                                   </div>
+                                   <div class="col-md-2 order_safety">
+                                       <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png" alt="max safety">
+                                   </div>
+                               </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                               <div class="order_cardimg">
+                                   <img src="https://b.zmtcdn.com/data/pictures/chains/5/19295245/089cbcf1d3307542c72f77272556b28b_o2_featured_v2.jpg" alt="Jay Bhawani Vadapav">
+                                   <div class="order_min"><p>24 min</p></div>
+                              </div>
+                              <div class="row ordercard_text">
+                                  <div class="col-md-9 order_name">
+                                    Jay Bhawani Vadapav
+                                  </div>
+                                  <div class="col-md-3 order_rating">
+                                      3.2<i class="fa-solid fa-star"></i>
+                                  </div>
+                              </div>
+                              <div class="row ordercard_text">
+                                  <div class="col-md-7 order_type">
+                                      Street Food
+                                  </div>
+                                  <div class="col-md-5 order_price">
+                                      <i class="fa-solid fa-indian-rupee-sign"></i> 150 for one
+                                  </div>
+                              </div>
+                           
+                              <hr />
+                              <div class="row ordercard_text">
+                                  <div class="col-md-10 order_summary">
+                                      <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png" alt="trending">
+                                      <span>2575+ orders placed from here recently</span>
+                                  </div>
+                                  <div class="col-md-2 order_safety">
+                                      <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png" alt="max safety">
+                                  </div>
+                              </div>
+                           </div>
+
+                           <div class="col-lg-4">
+                               <div class="order_cardimg">
+                                   <img src="https://b.zmtcdn.com/data/pictures/0/19150380/a7b8937359013086720f7b86f0a7398d_o2_featured_v2.jpg" alt="Chhaswala">
+                                   <div class="order_min"><p>14 min</p></div>
+                              </div>
+                              <div class="row ordercard_text">
+                                  <div class="col-md-9 order_name">
+                                    Chhaswala
+                                  </div>
+                                  <div class="col-md-3 order_rating">
+                                      4.4<i class="fa-solid fa-star"></i>
+                                  </div>
+                              </div>
+                              <div class="row ordercard_text">
+                                  <div class="col-md-7 order_type">
+                                      Beverages,Shake
+                                  </div>
+                                  <div class="col-md-5 order_price">
+                                      <i class="fa-solid fa-indian-rupee-sign"></i> 350 for one
+                                  </div>
+                              </div>
+                           
+                              <hr />
+                              <div class="row ordercard_text">
+                                  <div class="col-md-10 order_summary">
+                                      <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png" alt="trending">
+                                      <span>2700+ orders placed from here recently</span>
+                                  </div>
+                                  <div class="col-md-2 order_safety">
+                                      <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png" alt="max safety">
+                                  </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                    <!--order card section end-->
+                </div>
+                <!--content section end-->
+            </div>
+        </section>
+        <!--filter and content section end-->
+
+        <!--Explore section start-->
+        <section class="explore_detail">
+            <div class="other_options">
+                <h1>Explore other options for you here</h1>
+                <h3>Popular cuisines near me</h3>
+                <!--Explore detail section start-->
+                <div class="explore_details">
+                    <a href="#">Bakery food near me</a> <i class="fas fa-circle"></i>
+                    <a href="#">Beverages food near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Biryani food near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Burger food near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Chinese food near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Coffee food near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Desserts food near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Ice Cream food near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Italian food near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Mithai food near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Momos food near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Mughlai food near me </a><i class="fas fa-circle"></i>
+                    <a href="#">North Indian food near me</a> <i class="fas fa-circle"></i>
+                    <a href="#">Pasta food near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Pizza food near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Rolls food near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Sandwich food near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Shake food food near me</a><i class="fas fa-circle"></i>
+                    <a href="#">South Indian food near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Street food food near me</a>
+                </div>
+                <!--Explore detail section end-->
+            </div>
+            <div class="other_options">
+                <!--near me section start-->
+                <h3>Popular restaurant types near me</h3>
+                <div class="restaurant_details">
+                    <a href="#">Bakeries near me</a> <i class="fas fa-circle"></i>
+                    <a href="#">Beverage Shops near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Bhojanalya near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Cafes near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Casual Dining near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Dessert Parlors near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Dhabas near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Fine Dining near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Food Courts near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Food Trucks near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Kiosks near me</a><i class="fas fa-circle"></i>
+                    <a href="#">Quick Bites near me </a><i class="fas fa-circle"></i>
+                    <a href="#">Sweet Shop near me</a>
+                </div>
+                <!--near me section end-->
+            </div>
+            <div class="other_options">
+                <!--restaurant section start-->
+                <h3>Top Restaurant Chains</h3>
+                <div class="row">
+                    <div class="col-md-2 city">
+                        <ul>
+                            <li><a href="#">Bikanervala</a></li>
+                            <li><a href="#">McDonald's</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 city1">
+                        <ul>
+                            <li><a href="#">Burger King</a></li>
+                            <li><a href="#">Pizza Hut</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 city1">
+                        <ul>
+                            <li><a href="#">Burger Singh</a></li>
+                     </ul> 
+                    </div>
+                    <div class="col-md-2 city1">
+                        <ul>
+                            <li><a href="#">Dunkin' Donuts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 city1">
+                        <ul>
+                            <li><a href="#">KFC</a></li>
+                        </ul>
+                    </div>
+                     
+                </div>
+                <!--Restaurant section end-->
+            </div>    
+            <div class="other_options">
+                <!--cities section start-->
+                <h3>Cities We Deliver To</h3>
+                <div class="row">
+                    <div class="col-md-2 city">
+                        <ul>
+                            <li><a href="#">Delhi</a></li> 
+                            <li><a href="#">Hyderabad</a></li> 
+                            <li><a href="#">Ahmedabad</a></li> 
+                            <li><a href="#">Ooty</a></li> 
+                            <li><a href="#">Kanpur</a></li> 
+                            <li><a href="#">Visakhapatnam</a></li> 
+                            <li><a href="#">Nagpur</a></li> 
+                            <li><a href="#">Surat</a></li> 
+                            <li><a href="#">Neemrana</a></li> 
+                            <li><a href="#">Pushkar</a></li> 
+                            <li><a href="#">Thrissur</a></li> 
+                            <li><a href="#">Ajmer</a></li> 
+                            <li><a href="#">Manali</a></li> 
+                        </ul>
+                    </div>
+                    <div class="col-md-2 city1">
+                        <ul>
+                       <li><a href="#">Kolkata</a></li> 
+                       <li><a href="#">Chennai</a></li> 
+                        <li><a href="#">Chandigarh</a></li>
+                        <li><a href="#">Shimla</a></li> 
+                        <li><a href="#">Allahabad</a></li> 
+                        <li><a href="#">Bhubneswar</a></li> 
+                        <li><a href="#">Agra</a></li> 
+                        <li><a href="#">Varanasi</a></li> 
+                        <li><a href="#">Cuttack</a></li> 
+                        <li><a href="#">Rajkot</a></li> 
+                        <li><a href="#">Manipal</a></li> 
+                        <li><a href="#">Mussoorie</a></li>  
+                        <li><a href="#">Dharamshala</a></li> 
+                    </ul>
+                    </div>
+                    <div class="col-md-2 city1">
+                        <ul>
+                            <li><a href="#">Mumbai</a></li> 
+                            <li> <a href="#">Lucknow</a></li> 
+                            <li><a href="#">Goa</a></li> 
+                            <li><a href="#">Ludhiana</a></li> 
+                            <li><a href="#">Aurangabad</a></li> 
+                            <li><a href="#">Coimbatore</a></li> 
+                            <li><a href="#">Dehradun</a></li> 
+                            <li><a href="#">Patna</a></li> 
+                            <li><a href="#">Trivandrum</a></li> 
+                            <li><a href="#">Madurai</a></li> 
+                            <li><a href="#">Vijaywada</a></li> 
+                            <li><a href="#">Rishikesh</a></li> 
+                            <li><a href="#">Raipur</a></li> 
+                    </ul>
+                    </div>
+                    <div class="col-md-2 city1">
+                        <ul>
+                       <li><a href="#">Bengaluru</a></li> 
+                       <li><a href="#">Kochi</a></li> 
+                        <li><a href="#">Indore</a></li> 
+                        <li><a href="#">Guwahati</a></li> 
+                        <li><a href="#">Bhopal</a></li> 
+                        <li><a href="#">Mangalore</a></li> 
+                        <li><a href="#">Mysore</a></li> 
+                        <li><a href="#">Udaipur</a></li> 
+                        <li><a href="#">Haridwar</a></li> 
+                        <li><a href="#">Kozhikode</a></li> 
+                        <li><a href="#">Jodhpur</a></li> 
+                        <li><a href="#">Jalandhar</a></li> 
+                        <li><a href="#" class="see_more">See more</a><hr class="line"/></li> 
+                    </ul>
+                    </div>
+                    <div class="col-md-2 city1">
+                        <ul>
+                            <li><a href="#">Pune</a></li> 
+                            <li> <a href="#">Jaipur</a></li> 
+                            <li><a href="#">Nashik</a></li> 
+                            <li><a href="#">Amritsar</a></li> 
+                            <li><a href="#">Ranchi</a></li> 
+                            <li><a href="#">Vadodara</a></li> 
+                            <li><a href="#">Puducherry</a></li> 
+                            <li><a href="#">Khajuraho</a></li> 
+                            <li><a href="#">Leh</a></li> 
+                            <li><a href="#">Alappuzha</a></li> 
+                            <li><a href="#">Kota</a></li> 
+                            <li><a href="#">Jammu</a></li> 
+                    </ul>
+                    </div>
+                </div>
+                <!--cities section end-->
+            </div>    
+        </section>
+        <!--Explore section end-->
+        
+        <!--Footer section start-->
+        <footer>
+            <div class="footer">
+              <div class="row footer_section">
+                 <div class="col-md-9 footer_img">
+                     <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*" alt="zomato">
+                  </div>
+                  <div class="col-md-3 footer_option">
+                    <span>🇮🇳 India <i class="fa-solid fa-chevron-down"></i></span>
+                    <span> <i class="fa-solid fa-globe"></i> English <i class="fa-solid fa-chevron-down"></i></span>
+                  </div>
+            </div>
+            <div class="row footer_nav">
+                <div class="col-md-2 footer_nav_style">
+                    <h4>
+                        About zomato
+                    </h4>
+                    <ul>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Work With Us</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Report Fraud</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 footer_nav_style">
+                    <h4>
+                        ZOMAVERSE
+                    </h4>
+                    <ul>
+                        <li><a href="#">Zomato</a></li>
+                        <li><a href="#">Feeding India</a></li>
+                        <li><a href="#">Hyperpure</a></li>
+                        <li><a href="#">Zomaland</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer_nav_style">
+                    <h4>
+                        FOR RESTAURANTS
+                    </h4>
+                    <ul>
+                        <li><a href="#">Partner With Us</a></li>
+                        <li><a href="#">Apps For You</a></li>
+                   </ul>
+                   <div class="footer_nav_style enterprise ">
+                    <h4>
+                        FOR Enterprises
+                    </h4>
+                    <ul>
+                        <li><a href="#">Zomato For Work</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 footer_nav_style">
+                    <h4>
+                        Learn More
+                    </h4>
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="col-md-3  footer_nav_style">
+                    <h4>
+                        Social Links
+                    </h4>
+                    <div class="social_links">
+                         <div>
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-facebook"></i>
+                         </div>
+                         <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="download from playstore">
+                         <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="download from appstore">
+                    </div>
+                </div>
+             
+            </div>
+            <hr class="footer_hr"/>
+            <div class="row footer_text">
+            <div class="col-md-12">
+              By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 
+             </div>
+            <div class="col-md-12">2008-2022 © Zomato™ Ltd. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer section start--> 
+        
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+</html>
