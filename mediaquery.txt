@@ -1,0 +1,157 @@
+@media only screen and (min-width: 390px) and (max-width: 575px) {
+           .header_section{
+             height: 50vh;
+           }
+           .zomato_background{
+            top:0vh;
+            height: 73vh;
+           }
+           .xomato_nav{
+            margin-right: 2%;
+           }
+           .navigation h4 {
+            margin-left: 5%;
+        }
+           .zomato_background img{
+            height: 100%;
+           }
+           .zomato_head{
+            margin-top: 145px;
+           }
+           .zomato_head img {
+            width: 45%;
+           }
+           .zomato_head .search{
+            width: 98%;
+           }
+           .zomato_head h3{
+            font-size: 1.7rem;
+           }
+           .order_card{
+             width: 100% !important;
+           }
+           .collection_card .col-sm-6{
+            width: 100%;
+           }
+          .card_details{
+            position: relative;
+            top: 89%;
+          }
+          .locality_section{
+            margin: 0;
+          }
+          .locality_section .row{
+            margin: 0;
+          }
+          .locality_section h1 {
+            font-size: 1.7em;
+            font-family: Okra,Helvetica,sans-serif;
+            color: rgb(54, 54, 54);
+            font-weight: 500;
+            margin-left: 22px;
+            margin-bottom: 28px;
+        }
+        .div_locality {
+            width: 100%;
+            height: 7vh;
+            margin-bottom: 20px;
+        }
+        .div_locality div{
+            font-size: 17px;
+            margin-top: 17px;
+            margin-left: 7px;
+        }
+        .icon_position{
+            float: none;
+            margin-top: 7px;
+        }
+        .app_section {
+            margin: 0;
+            padding: 40px 60px;
+        }
+        .app_image {
+            width: 100%;
+        }
+        .get_app .app_image img{
+            width: 100%;
+            height: 40vh;
+            margin-left: -2%;
+        }
+        .app_form {
+            width: 100%;
+            margin-top: 5%;
+            margin-left: 9%;
+        }
+        .app_form h2 {
+            font-size: 2.5em;
+        }
+        .download_img img{
+            width: 47%;
+            height: 7vh;
+        }
+        .emailbox input{
+            font-size: 14px;
+            width: 59%;
+        }
+        .emailbox button{
+            width: 31%;
+            height: 5vh;
+        }
+        .explore_detail {
+            margin: 40px 50px;
+        }
+        .other_options h1{
+            font-size: 1.6rem;
+        }
+        .other_options h3{
+            font-size: 1.4rem;
+        }
+        .other_options .row{
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        .city {
+            margin-left: -7%;
+            padding: 0 !important;
+        }
+        .city1 {
+            margin-left: 11px;
+            padding: 0 !important;
+        }
+        .city_margin{
+            margin-left: -7%;
+            padding: 0 !important;
+        }
+        .other_options .row>div>ul{
+            padding-left: 1.7rem;
+
+        }
+        .footer_option{
+            width: 54%;
+            margin-left: -4%;
+            margin-top: 22px;
+        }
+        .footer_nav_style:nth-child(1){
+            width: 50%;
+        }
+        .footer_nav_style:nth-child(2){
+            padding-left: 15%;
+        }
+        .footer_nav_style:nth-child(3){
+            width: 62%;
+        }
+        .footer_nav_style:nth-child(4){
+            width: 38%;
+        }
+        .footer_nav_style .social_links {
+            margin-left: 5%;
+        }
+        .footer_nav_style ul{
+            padding: 0 !important;
+        }
+        .social_links img {
+            height: 5vh;
+            width: 50%;
+        }
+      
+  }

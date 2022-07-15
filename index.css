@@ -121,6 +121,7 @@ a{
 }
 .zomato_background img{
     width: 100%;
+    height: 100%;
 }
 
 .order_content{
@@ -155,6 +156,7 @@ a{
     width: 100%;
     position: absolute;
     top: -70px;
+    left: 0px;
 }
 
 .order_content .order_card .order_text{
@@ -163,6 +165,7 @@ a{
     width: 100%;
     height: 11vh;
     bottom: 18px;
+    left: 0px;
     z-index: 1;
 }
 .order_text h2{
@@ -284,7 +287,6 @@ a{
 
 
 .app_section{
-    margin-left: 7%;
     padding:40px 0;
     height: auto;
     background-color: rgb(255, 251, 247);
@@ -298,7 +300,7 @@ a{
 
 .app_image{
     width: 39%;
-    margin-left: 25px;
+    margin-left: 75px;
 }
 
 .get_app .app_image img{
@@ -622,160 +624,604 @@ a{
 
 }
 
-@media only screen and (max-width: 576px) {
-           .header_section{
-             height: 50vh;
-           }
-           .zomato_background{
-            top:0vh;
-            height: 73vh;
-           }
-           .xomato_nav{
-            margin-right: 2%;
-           }
-           .navigation h4 {
-            margin-left: 5%;
-        }
-           .zomato_background img{
-            height: 100%;
-           }
-           .zomato_head{
-            margin-top: 145px;
-           }
-           .zomato_head img {
-            width: 45%;
-           }
-           .zomato_head .search{
-            width: 98%;
-           }
-           .zomato_head h3{
-            font-size: 1.7rem;
-           }
-           .order_card{
-             width: 100% !important;
-           }
-           .collection_card .col-sm-6{
-            width: 100%;
-           }
-          .card_details{
-            position: relative;
-            top: 89%;
-          }
-          .locality_section{
-            margin: 0;
-          }
-          .locality_section .row{
-            margin: 0;
-          }
-          .locality_section h1 {
-            font-size: 1.7em;
-            font-family: Okra,Helvetica,sans-serif;
-            color: rgb(54, 54, 54);
-            font-weight: 500;
-            margin-left: 22px;
-            margin-bottom: 28px;
-        }
-        .div_locality {
-            width: 100%;
-            height: 7vh;
-            margin-bottom: 20px;
-        }
-        .div_locality div{
-            font-size: 17px;
-            margin-top: 17px;
-            margin-left: 7px;
-        }
-        .icon_position{
-            float: none;
-            margin-top: 7px;
-        }
-        .app_section {
-            margin: 0;
-            padding: 40px 60px;
-        }
-        .app_image {
-            width: 100%;
-        }
-        .get_app .app_image img{
-            width: 100%;
-            height: 40vh;
-            margin-left: -2%;
-        }
-        .app_form {
-            width: 100%;
-            margin-top: 5%;
-            margin-left: 9%;
-        }
-        .app_form h2 {
-            font-size: 2.5em;
-        }
-        .download_img img{
-            width: 47%;
-            height: 7vh;
-        }
-        .emailbox input{
-            font-size: 14px;
-            width: 59%;
-        }
-        .emailbox button{
-            width: 31%;
-            height: 5vh;
-        }
-        .explore_detail {
-            margin: 40px 50px;
-        }
-        .other_options h1{
-            font-size: 1.6rem;
-        }
-        .other_options h3{
-            font-size: 1.4rem;
-        }
-        .other_options .row{
-            padding: 0 !important;
-            margin: 0 !important;
-        }
-        .city {
-            margin-left: -7%;
-            padding: 0 !important;
-        }
-        .city1 {
-            margin-left: 11px;
-            padding: 0 !important;
-        }
-        .city_margin{
-            margin-left: -7%;
-            padding: 0 !important;
-        }
-        .other_options .row>div>ul{
-            padding-left: 1.7rem;
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .header_section{
+      height: 50vh;
+    }
+    .zomato_background{
+     top:0vh;
+     height: 100%;
+    }
+    .xomato_nav{
+     margin-right: 4%;
+    }
+    .xomato_nav li {
+        font-size: 1rem;
+    }    
+    .navigation h4 {
+        margin-left: 6%;
+        width: 100%;
+    }
+    .zomato_background img{
+     height: 100%;
+    }
+    .zomato_head{
+     margin-top: 124px;
+    }
+    .zomato_head img {
+     width: 45%;
+    }
+    .zomato_head .search{
+     width: 98%;
+    }
+    .zomato_head h3{
+     font-size: 1.7rem;
+    }
+    .order_content{
+        margin: 70px 15px;
+    }
+    .order_card {
+        width: 46% !important;
+        margin: 2% 10px !important;
+    }
+    .order_card img{
+        left:0;
+    }
+    .order_content .order_card .order_text {
+        left: 0;
+    }
+    .collection_content {
+        margin: 45px 23px;
+    }
+    .collection_content .collection_card {
+         margin-top: -5%;
+         margin-bottom: 15%;
+    }
+    .collection_content .collection_title .title_details {
+        font-size: 14px;
+    }
+    .collection_card .col-sm-6{
+     width: 50%;
+     padding: 0 !important;
+    }
+    .collection_card .row{
+        padding: 0 !important;
+    }
+    .collection_content .collection_title .location{
+        padding-left: 0;
+        font-size: 12px;
+        padding-top: 2%;
+        margin-left: -1%;
+    }
+    .collection_content .collection_card img{
+        height: 38vh;
+    }
+   .card_details{
+     position: relative;
+     top: 84%;
+     left: 2%;
+   }
+   .card_details span {
+      font-size: 1em;
+   }
+   .locality_section{
+     margin: 0;
+   }
+   .locality_section .row{
+     margin: 0;
+   }
+   .locality_section h1 {
+     font-size: 1.7em;
+     font-family: Okra,Helvetica,sans-serif;
+     color: rgb(54, 54, 54);
+     font-weight: 500;
+     margin-left: 22px;
+     margin-bottom: 28px;
+ }
+ .div_locality {
+     width: 100%;
+     height: 6vh;
+     margin-bottom: 20px;
+ }
+ .div_locality div{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 6px;
+ }
+ .icon_position{
+    margin-right: 5px;
+    font-size: 10px;
+    margin-top: -16px;
+    float: none;
+ }
+ .app_section {
+     margin: 0;
+     padding: 40px 0px;
+ }
+ .app_image {
+    width: 47%;
+    margin-left: 4%;;
+ }
+ .get_app .app_image img{
+    width: 100%;
+    margin-top: 26%;
+    height: 43vh;
+    margin-left: -12%;
+ }
+ .app_form {
+    width: 55%;
+    margin-top: 5%;
+    margin-left: -6%;
+ }
+ .app_form h2 {
+     font-size: 2.5em;
+ }
+ .download_img img{
+    width: 49%;
+    height: 6vh;
+ }
+ .emailbox input{
+     font-size: 14px;
+     width: 59%;
+ }
+ .radio_margin {
+    margin-left: 3%;
+}
+ .emailbox button{
+    width: 34%;
+    height: 5vh;
+    padding: 0;
+ }
+ .explore_detail {
+     margin: 40px 20px;
+ }
+ .other_options h1{
+     font-size: 1.6rem;
+ }
+ .other_options h3{
+     font-size: 1.4rem;
+ }
+ .other_options .row{
+     padding: 0 !important;
+     margin: 0 !important;
+ }
+ .city {
+    padding: 0 !important;
+    width: 23%;
+ }
+ .city ul li a {
+    font-size: 1em;
+ }
+ .city1 {
+    margin-left: 13px;
+    padding: 0 !important;
+    width: 24%;
+ }
+  .city1 ul li a {
+    font-size: 1em;
+ }
+ .restaurant_margin{
+     margin-left: -3.5%;
+     padding: 0 !important;
+ }
+ .other_options .row>div>ul{
+     padding-left: 1rem;
 
-        }
-        .footer_option{
-            width: 54%;
-            margin-left: -4%;
-            margin-top: 22px;
-        }
-        .footer_nav_style:nth-child(1){
-            width: 50%;
-        }
-        .footer_nav_style:nth-child(2){
-            padding-left: 15%;
-        }
-        .footer_nav_style:nth-child(3){
-            width: 62%;
-        }
-        .footer_nav_style:nth-child(4){
-            width: 38%;
-        }
-        .footer_nav_style .social_links {
-            margin-left: 5%;
-        }
-        .footer_nav_style ul{
-            padding: 0 !important;
-        }
-        .social_links img {
-            height: 5vh;
-            width: 50%;
-        }
-      
+ }
+ .footer_section {
+    padding-top: 60px;
+    padding-left: 50px;
+}
+ .footer_nav {
+    margin: 40px 14px;
+}
+  .footer_img{
+    width: 36%;
+    margin-left: -4.5%;
   }
+ .footer_img img {
+    width: 100%;
+    height: 4vh;
+    margin-left: 5px;
+}
+ .footer_option{
+    width: 49%;
+    padding-top: 2%;
+    margin-top: -32px;
+ }
+ .footer_nav_style h4 {
+    font-size: 16px;
+ }
+ .footer_nav_style:nth-child(1){
+     width: 33%;
+ }
+ .footer_nav_style:nth-child(2){
+     width: 29%;
+     padding-left: 0;
+ }
+ .footer_nav_style:nth-child(3){
+     width: 38%;
+ }
+ .footer_nav_style:nth-child(4){
+     width: 38%;
+ }
+ .footer_nav_style:nth-child(5){
+    margin-left: -7%;
+    width: 50%;
+}
+.footer_nav_style ul{
+     padding: 0 !important;
+ }
+ .footer_nav_style .social_links{
+    margin-left: 6%;
+ }
+ .social_links img {
+    height: 5.5vh;
+    width: 60%;
+ }
+ .footer_hr {
+    margin-left: 30px;
+    width: 90%;
+ }
+ .footer_text {
+    margin-left: 30px;
+ }   
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header_section{
+      height: 53vh;
+    }
+    .zomato_background{
+     top:0vh;
+     height: 100%;
+    }
+ 
+    .zomato_head{
+     margin-top: 150px;
+    }
+    
+   .zomato_head img {
+    width: 35%;
+    }
+    .zomato_head .search{
+        width: 85%;
+    }
+    .xomato_nav {
+        margin-right: 87px;
+    }
+    .navigation h4 {
+        margin-left: 30px;
+    }
+    .order_card {
+        width: 31%;
+        height: 38vh;
+    }
+    .order_content{
+       margin: 52px 13px
+    }
+    .order_card img{
+      left: 0px;
+    } 
+    .order_content .order_card .order_text{
+        left: 0px;
+        bottom: -20px;
+        height: 15vh;
+    }
+    .collection_content {
+         margin: 45px 28px;
+    }
+    .collection_content .collection_card {
+         margin-bottom: 9%;
+    }
+    .collection_content .collection_title .title_details {
+        font-size: 18px;
+    }
+    .collection_content .collection_title .location{
+      padding-top: 5px;
+      padding-left: 4%;
+      font-size: 15px
+    }
+    .collection_content .collection_card img{
+       height:35vh;
+       width: 100%;
+    }
+    .collection_card .col-md-3 {
+        padding: 1%;
+    }
+    .card_details{
+     font-size: 12px;
+     bottom: 6px;
+   }
+   .locality_section{
+    margin: 45px 9px;
+   }
+   .locality_section .row{
+     margin-left: 9px;
+   }
+   .locality_section h1 {
+     font-size: 1.7em;
+     font-family: Okra,Helvetica,sans-serif;
+     color: rgb(54, 54, 54);
+     font-weight: 500;
+     margin-left: 22px;
+     margin-bottom: 28px;
+ }
+ .div_locality {
+    width: 89%;
+    height: 8vh;
+    margin-bottom: 20px;
+ }
+ .div_locality div{
+    font-size: 18px;
+    margin-top: 19px;
+    margin-left: 5px;
+ }
+ .icon_position{
+    margin-right: 6px;
+    font-size: 12px;
+    margin-top: 4px;
+    float: none;
+ }
+ .app_section {
+     margin: 0;
+     padding: 40px 60px;
+ }
+ .app_image {
+    width: 47%;
+    margin-top: 5%;
+ }
+ .get_app .app_image img{
+     width: 100%;
+     height: 40vh;
+     margin-left: -20%;
+ }
+ .app_form {
+    width: 47%;
+    margin-top: 5%;
+    margin-left: -6%;
+ }
+ .app_form h2 {
+     font-size: 2.5em;
+ }
+ .download_img img{
+    width: 49%;
+    height: 7vh
+ }
+ .emailbox input{
+     font-size: 16px;
+     width: 65%;
+ }
+ .radio_margin {
+    margin-left: 3%;
+}
+ .emailbox button{
+    width: 32%;
+    height: 5vh;
+    padding: 0;
+ }
+ .explore_detail {
+     margin: 40px 50px;
+ }
+ .other_options h1{
+     font-size: 1.6rem;
+ }
+ .other_options h3{
+     font-size: 1.4rem;
+ }
+ .other_options .row{
+     padding: 0 !important;
+     margin: 0 !important;
+ }
+ .city {
+    margin-left: -5%;
+    padding: 0 !important;
+    width: 20%;
+ }
+ .city1 {
+    margin-left: 11px;
+    padding: 0 !important;
+    width: 20%;
+ }
+ .line {
+    margin: 3px -5px;
+    width: 100%;
+}
+ .restaurant_margin{
+     margin-left: 0%;
+     padding: 0 !important;
+ }
+ .other_options .row>div>ul{
+     padding-left: 2rem;
+
+ }
+
+ .footer_section {
+    padding-left: 60px;
+}
+.footer_nav {
+    margin: 40px 46px;
+}
+  .footer_img{
+    width: 26%;
+}
+ .footer_img img {
+    width: 100%;
+    height: 4vh;
+ 
+}
+ .footer_option{
+    width: 54%;
+    padding-left: 17.5%;
+    margin-left: 47%;
+    margin-top: -32px;
+ }
+ .footer_nav_style:nth-child(1){
+     width: 29%;
+ }
+ .footer_nav_style:nth-child(2){
+    width: 24%;
+    margin-left: -4%;
+ }
+ .footer_nav_style:nth-child(3){
+    width: 33%;
+    margin-left: -2%;
+    
+ }
+ .footer_nav_style:nth-child(4){
+    width: 22%;
+    margin-left: -2%;
+ }
+ .footer_nav_style .social_links{
+    margin-left: 6%;
+ }
+.footer_nav_style ul{
+     padding: 0 !important;
+ }
+ .social_links img {
+    height: 5vh;
+    width: 72%;
+ }
+ .footer_nav_style h4{
+    font-size: 18px;
+ }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1440px){
+    .header_section{
+        height: 56vh;
+      }
+      .zomato_background{
+       top:0vh;
+       height: 100%;
+      }
+   
+      .zomato_head{
+       margin-top: 130px;
+      }
+      
+     .zomato_head img {
+      width: 35%;
+      }
+      .zomato_head .search{
+          width: 85%;
+      }
+      .order_content {
+        margin: 70px 40px;
+      }
+      .order_card {
+        height: 38vh;
+    }
+    .collection_content {
+        margin: 45px 40px;
+   }
+    .order_content .order_card .order_text{
+        bottom: 0px;
+        height: 13vh;
+    } 
+    .collection_content .collection_title .location{
+        padding-top: 7px;
+        padding-left: 2%;
+        font-size: 14.5px;
+      }
+      .collection_content .collection_card img{
+        height:38vh;
+        width: 100%;
+     }
+     .collection_card .col-lg-3 {
+        padding: 1%;
+    }
+    .card_details{
+        bottom: 6px;
+      }
+      .locality_section {
+        margin: 90px 40px;
+    }
+    .div_locality div {
+        margin-top: 16px;
+        margin-left: 10px;
+    }
+    .icon_position{
+        font-size: 13.5px;
+        margin-top: 8px;
+        margin-right: 12px;
+    }
+    .get_app .app_image img {
+        width: 87%;
+        margin-left: 17%;
+        height: 42vh;
+    }  
+    .emailbox button {
+        width: 33%;
+        height: 5vh;
+    }
+    .download_img img {
+        width: 30%;
+    }    
+    .city1 {
+        width: 19%;
+        margin-left: 15px;
+    }  
+    .city {
+        margin-left: -3%;
+    }  
+    .line {
+        margin: 3px -9px;
+        width: 100%;
+    } 
+    .footer_section {
+        padding-left: 70px;
+    }  
+    .footer_img{
+       width: 30%;
+    }
+    .footer_option{
+        width: 53%;
+        padding-left: 17.5%;
+        margin-left: 47%;
+        margin-top: -38px;
+     }
+     .footer_nav {
+        margin: 40px 55px;
+    }
+    .footer_nav_style:nth-child(1) {
+        width: 23%;
+    }
+    .footer_nav_style>ul{
+        padding-left: 0 !important;
+    }
+
+   .footer_nav_style h4{
+    font-size: 1em;
+   }
+    .footer_nav_style:nth-child(2) {
+        width: 19%;
+        margin-left: -4%;
+    }
+    .footer_nav_style:nth-child(3) {
+        width: 23%;
+        margin-left: -3%;
+    }
+    .enterprise ul{
+        margin-left: -17%;
+    }
+    .footer_nav_style:nth-child(4) {
+        width: 18%;
+        margin-left: -3%;
+    }
+    .footer_nav_style:nth-child(5) {
+        width: 29%;
+        margin-left: -3%;
+    }
+    .footer_nav_style .social_links {
+        margin-left: 0.5%;
+    }
+    .social_links img {
+        height: 5vh;
+        width: 60%;
+    }
+
+}
